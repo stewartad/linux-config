@@ -1,0 +1,6 @@
+#TabsToolbar { visibility: collapse; }
+#sidebar-header { display: none }
+.tab {
+    margin-left: 1px;
+    margin-right: 1px;
+}
