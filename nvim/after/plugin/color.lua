@@ -3,7 +3,7 @@ require("catppuccin").setup({
 })
 
 function ApplyColors(color)
-	color = color or "catppuccin"
+	color = color or "hardhacker"
 	vim.cmd.colorscheme(color)
 end
 
