@@ -19,4 +19,12 @@ lsp.setup_nvim_cmp({
     mapping = cmp_mappings
 })
 
+on_attach = function(client, bufnr)
+  local maps = vim.keymap.set
+  local opts_l = { silent = true, noremap = true }
+
+  maps('n', 'K', vim.lsp.buf.hover, opts_l)
+  maps({ 'n', 'i' }, '<C-k>', vim.lsp.buf.signature_help, opts_l)
+end
+
 lsp.setup()
