@@ -77,4 +77,8 @@ return require('packer').startup(function(use)
   use {
       'xiyaowong/transparent.nvim',
   }
+
+  use {
+      'fatih/vim-go.nvim',
+  }
 end)
