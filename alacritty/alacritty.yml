@@ -1,5 +1,7 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 window:
   opacity: 0.9
 font:
   normal:
-    family: JetBrains Mono Nerd Font Mono
+    family: JetBrainsMono Nerd Font Mono
