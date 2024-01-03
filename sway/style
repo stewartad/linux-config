@@ -1,0 +1,15 @@
+client.focused #babbf1 #303446 #ca9ee6 #ca9ee6  #babbf1
+client.focused_inactive #737994 #414559 #c6d0f5 #737994 #737994
+client.unfocused #737994 #303446 #c6d0f5 #737994 #737994
+# client.urgent
+
+# Change borders
+default_border pixel 1 
+# Change gaps
+gaps inner 5
+gaps outer 5
+
+smart_borders on
+smart_borders inverse_outer
+
+font pango:JetBrains Mono 10
