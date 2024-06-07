@@ -1,6 +1,6 @@
 exec blueman-applet
-exec mako
 exec rm -f /tmp/wob && mkfifo /tmp/wob && tail -f /tmp/wob | wob
+exec dunst
 
 set $gnome-schema org.gnome.desktop.interface
 
@@ -11,3 +11,4 @@ exec_always {
     gsettings set $gnome-schema font-name 'Noto Sans 9'
 }
 
+exec_always set_primary

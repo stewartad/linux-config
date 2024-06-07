@@ -10,16 +10,17 @@
 # Multi-display config
 
 # Vertical monitor
-output DP-2 {
-	bg /home/yequari/Pictures/Wallpapers/2427101.jpg fill
-	transform 270
-	position 0 0
+output DP-3 {
+	# bg /home/yequari/Pictures/Wallpapers/vertical.jpg fill
+	# transform 270
+	bg /home/yequari/Pictures/Wallpapers/horizontal.jpg fill
+	position 1920 0
 }
 
 # Horizontal monitor, centered vertically
-output DP-3 {
-	bg /home/yequari/Pictures/Wallpapers/james-donovan-kFHz9Xh3PPU-unsplash.jpg fill
-	position 1080 420
+output DP-2 {
+	bg /home/yequari/Pictures/Wallpapers/horizontal.jpg fill
+	position 0 0
 }
 #output DP-2 {
 #	bg /home/yequari/Pictures/Wallpapers/james-donovan-kFHz9Xh3PPU-unsplash.jpg fill
@@ -31,14 +32,14 @@ output DP-3 {
 #	position 1920 0
 #}
 
-workspace 1 output DP-2
-workspace 3 output DP-2
+workspace 1:$ws1 output DP-2
+workspace 3:$ws3 output DP-2
 workspace 5 output DP-2
 workspace 7 output DP-2
 workspace 9 output DP-2
 
-workspace 2 output DP-3
-workspace 4 output DP-3
+workspace 2:$ws2 output DP-3
+workspace 4:$ws4 output DP-3
 workspace 6 output DP-3
 workspace 8 output DP-3
 workspace 0 output DP-3
